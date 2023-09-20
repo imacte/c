@@ -5,23 +5,23 @@ int main()
 	int ch = 0;
 	int ret = 0;
 	char password[20] = {0};
-	printf("ÇëÊäÈëÃÜÂë:>");
-	scanf("%s", password);//ÊäÈëÃÜÂë£¬²¢·ÅÔÚpasswordÊı×éÖĞ
-	//»º³åÇøÊ£Ò»¸ö\n
-	//¶ÁÈ¡\n
+	printf("è¯·è¾“å…¥å¯†ç :>");
+	scanf("%s", password);//è¾“å…¥å¯†ç ï¼Œå¹¶æ”¾åœ¨passwordæ•°ç»„ä¸­
+	//ç¼“å†²åŒºå‰©ä¸€ä¸ª\n
+	//è¯»å–\n
 	while ((ch = getchar()) != '\n')
 	{
 		;
 	}
-	printf("ÇëÈ·ÈÏ£¨Y/N£©:>");
+	printf("è¯·ç¡®è®¤ï¼ˆY/Nï¼‰:>");
 	ret = getchar();//Yes/No
 	if (ret == 'Y')
 	{
-		printf("È·ÈÏ³É¹¦\n");
+		printf("ç¡®è®¤æˆåŠŸ\n");
 	}
 	else
 	{
-		printf("·ÅÆúÈ·ÈÏ\n");
+		printf("æ”¾å¼ƒç¡®è®¤\n");
 	}
 	return 0;
 }
