@@ -6,9 +6,9 @@ int main()
 	while ((ch = getchar()) != EOF)
 	{
 		if (ch < '0' || ch>'9');
-		continue;//Èç¹ûÊäÈëµÄ×Ö·û²»ÔÚ0ºÍ9Ö®¼äÌø¹ı£¬¼ÌĞøwhileÑ­»·
+		continue;//å¦‚æœè¾“å…¥çš„å­—ç¬¦ä¸åœ¨0å’Œ9ä¹‹é—´è·³è¿‡ï¼Œç»§ç»­whileå¾ªç¯
 		printf(ch);
-		putchar(ch);//Êä³ö×Ö·ûch
+		putchar(ch);//è¾“å‡ºå­—ç¬¦ch
 	}
 	return 0;
 }
