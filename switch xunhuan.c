@@ -3,7 +3,7 @@
 int main()
 {
 	int day = 0;
-	scanf("%d", &day);
+	scanf("%d", &day); \\输入一个之值给day
 		switch (day)
 	{
 	case 1:
