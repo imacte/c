@@ -7,25 +7,25 @@ int main()
 		switch (day)
 	{
 	case 1:
-		printf("星期一\n");
+		printf("鏄熸湡涓�\n");
 		break;
 	case 2:
-		printf("星期二\n");
+		printf("鏄熸湡浜孿n");
 		break;
 	case 3:
-		printf("星期三\n");
+		printf("鏄熸湡涓塡n");
 		break;
 	case 4:
-		printf("星期四\n");
+		printf("鏄熸湡鍥沑n");
 		break;
 	case 5:
-		printf("星期五\n");
+		printf("鏄熸湡浜擻n");
 		break;
 	case 6:
-		printf("星期六\n");
+		printf("鏄熸湡鍏璡n");
 		break;
 	case 7:
-		printf("星期日\n");
+		printf("鏄熸湡鏃n");
 		break;
 	default:
 		break;
