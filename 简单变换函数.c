@@ -22,7 +22,7 @@ int main()
 {
 	int a = 10;
 	int b = 20;
-	swap1(&a,&b);//a,b传的是地址而是本身的值
+	swap1(&a,&b);//a,b传的是地址而非本身的值
 	printf("a = % d b = % d\n", a, b);
 	return 0;
 }
