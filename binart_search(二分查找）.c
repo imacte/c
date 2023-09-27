@@ -1,17 +1,17 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include<math.h>
-                 //±¾ÖÊÉÏarrÊÇÒ»¸öÖ¸Õë
+                 //æœ¬è´¨ä¸Šarræ˜¯ä¸€ä¸ªæŒ‡é’ˆ
 int binary_search(int arr[], int k,int sz)
 {
-	//Ëã·¨µÄÊµÏÖ
-	//int sz = sizeof(arr) / sizeof(arr[0]);//Õâ¸öÔÚº¯ÊıÄÚ²¿Çó²»ÁË£¬¿ÉÒÔ·Åµ½º¯ÊıÍâ
+	//ç®—æ³•çš„å®ç°
+	//int sz = sizeof(arr) / sizeof(arr[0]);//è¿™ä¸ªåœ¨å‡½æ•°å†…éƒ¨æ±‚ä¸äº†ï¼Œå¯ä»¥æ”¾åˆ°å‡½æ•°å¤–
 	int left = 0;
 	int right = sz - 1;
 
 	while (left <= right)
 	{
-		int mid = (left + right) / 2;//ÖĞ¼äÔªËØµÄÏÂ±ê
+		int mid = (left + right) / 2;//ä¸­é—´å…ƒç´ çš„ä¸‹æ ‡
 		if (arr[mid] < k)
 		{
 			left = mid + 1;
@@ -27,19 +27,19 @@ int binary_search(int arr[], int k,int sz)
 }
 int main()
 {
-	//¶ş·Ö²éÕÒ
-	//ÔÚÒ»¸öÓĞĞòÊı×éÖĞ²éÕÒµÄÄ³¸öÊı
-	//Èç¹ûÕÒµ½ÁË·µ»Ø£¬Õâ¸öÊıµÄÏÂ±ê¡£ÕÒ²»µ½µÄ·µ»Ø-1
+	//äºŒåˆ†æŸ¥æ‰¾
+	//åœ¨ä¸€ä¸ªæœ‰åºæ•°ç»„ä¸­æŸ¥æ‰¾çš„æŸä¸ªæ•°
+	//å¦‚æœæ‰¾åˆ°äº†è¿”å›ï¼Œè¿™ä¸ªæ•°çš„ä¸‹æ ‡ã€‚æ‰¾ä¸åˆ°çš„è¿”å›-1
 	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
 	int k = 7;
 	int sz = sizeof(arr) / sizeof(arr[0]);
-	//                     ´«µİµÄÊÇÊı×éarrÊ×ÔªËØµÄµØÖ·
+	//                     ä¼ é€’çš„æ˜¯æ•°ç»„arré¦–å…ƒç´ çš„åœ°å€
 	int ret = binary_search(arr, k,sz);
 	if (ret == -1)
 	{
-		printf("ÕÒ²»µ½Ö¸¶¨Êı×Ö\n");
+		printf("æ‰¾ä¸åˆ°æŒ‡å®šæ•°å­—\n");
 	}
 	else
-		printf("ÕÒµ½ÁË£¬ÏÂ±êÊÇ£º%d\n", ret);
+		printf("æ‰¾åˆ°äº†ï¼Œä¸‹æ ‡æ˜¯ï¼š%d\n", ret);
 	return 0;
 }
