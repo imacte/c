@@ -1,7 +1,7 @@
 #include <stdio.h>
 void bubble_sort(int arr[], int sz)
 {
-    //È·¶¨Ã°ÅÝÅÅÐòµÄÌËÊý
+    //确定冒泡排序的趟数
     int i = 0;
     for (i = 0; i < sz - 1; i++)
     {
