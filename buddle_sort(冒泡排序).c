@@ -19,7 +19,7 @@ void bubble_sort(int arr[], int sz)
         }
         if (flag == 1)
         {
-            break;//break用于解除循环，if不是循环无法使用，但是这个break是给外面的for循环用的
+            break;//break用于解除循环(while,for)，if不是循环无法使用，但是这个break是给外面的for循环用的
         }
     }
 }
